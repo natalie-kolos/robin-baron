@@ -15,227 +15,163 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
-    <div class="container align-items-end">
-      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo-main.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about-me.html">About Me</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="work-with-me.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Work With Me
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="vip-matchmaking.html">VIP Matchmaking</a></li>
-              <li><a class="dropdown-item" href="in-person-retreat.html">In Person Retreats</a></li>
-              <li><a class="dropdown-item" href="agape-intensive.html">Agape Intensive</a></li>
-              <li><a class="dropdown-item" href="ask-a-matchmaker-podcast.html">Ask a Matchmaker Podcast</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="podcast.html">Podcasts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="merch.html">Merch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <section class="hero-section">
+<body>  
+  <div class="announcement-bar alert alert-warning alert-dismissible fade show mb-0" role="alert">    
+    Learn More About Our Full-Service Design Firm    
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <header class="d-flex flex-column">
+    <div class="header-tools order-1 order-lg-0 p-3">
       <div class="container">
-        <div class="hero-content">
-          <h1 class="highlighted-title highlighted-title__white">I Am Passionate About People</h1>
-          <p>From matchmaking to help you find love to in person retreats to help you meet your new best friends, I am a
-            true
-            matchmaker in every sense of the word. I believe in the power of genuine connections and meaningful
-            relationships.</p>
-          <a href="#" class="btn btn-custom btn-custom__brand">Work with me</a>
-        </div>
-      </div>
-    </section>
-    <div class="press__wrap">
-      <div class="container">
-        <div class="press d-flex flex-column row-gap-3">
-          <div class="d-flex flex-row flex-wrap gap-4 row-gap-4">
-            <img src="img/img-logo-NewYorkTimes.svg" alt=""> <img src="img/img-logo-Washington_Post.svg" alt="">
-          </div>
-          <div class="d-flex flex-row flex-wrap gap-4 row-gap-4">
-            <img src="img/img-logo-today.svg" alt=""> <img src="img/img-CBS-Mornings.svg" alt=""> <img
-              src="img/img-logo-Elle.svg" alt=""> <img src="img/img-logo-bazaar.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="section services-section">
-      <div class="container">
-        <h2 class="highlighted-title highlighted-title__primary">My Programs</h2>
         <div class="row">
-          <div class="service__block__wrap col-lg-3 col-md-6">
-            <a href="vip-matchmaking.html" class="service__block">
-              <div class="service__block__img img-custom tape-effect tape-effect__brand">
-                <img class="img-fluid" src="img/img-service-01.jpg"
-                  srcset="img/img-service-01.jpg 1x, img-service-01@2x.jpg 2x" width="288" height="355"
-                  alt="VIP Matchmaking">
-              </div>
-              <h3>VIP Matchmaking</h3>
-            </a>
+          <div class="col-lg-8">
+            <div class="header-tools_block text-center text-lg-left">
+              <img src="img/Confidence_new.svg" alt="">
+            </div>
           </div>
-          <div class="service__block__wrap col-lg-3 col-md-6">
-            <a href="in-person-retreat.html" class="service__block">
-              <div class="service__block__img img-custom tape-effect tape-effect__primary">
-                <img class="img-fluid" src="img/img-service-02.jpg"
-                  srcset="img/img-service-02.jpg 1x, img-service-02@2x.jpg 2x" width="288" height="355"
-                  alt="Group Coaching Programs">
-              </div>
-              <h3>Group Coaching Programs</h3>
-            </a>
-          </div>
-          <div class="service__block__wrap col-lg-3 col-md-6">
-            <a href="agape-intensive.html" class="service__block">
-              <div class="service__block__img img-custom tape-effect tape-effect__brand">
-                <img class="img-fluid" src="img/img-service-03.jpg"
-                  srcset="img/img-service-03.jpg 1x, img-service-03@2x.jpg 2x" width="288" height="355"
-                  alt="In Person Retreats">
-              </div>
-              <h3>In Person Retreats</h3>
-            </a>
-          </div>
-          <div class="service__block__wrap col-lg-3 col-md-6">
-            <a href="ask-a-matchmaker-podcast.html" class="service__block">
-              <div class="service__block__img img-custom tape-effect tape-effect__primary">
-                <img class="img-fluid" src="img/img-service-04.jpg"
-                  srcset="img/img-service-04.jpg 1x, img-service-04@2x.jpg 2x" width="288" height="355"
-                  alt="Ask a Matchmaker Podcast">
-              </div>
-              <h3>Ask a Matchmaker Podcast</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-section">
-      <div class="container">
-        <div class="row align-items-center flex-column-reverse flex-lg-row">
           <div class="col-lg-4">
-            <div class="tape-effect tape-effect_both tape-effect__brand">
-              <img class="img-fluid w-100 img-custom img__sticker img__sticker__y img__sticker__y__brand"
-                src="img/img-maria-01.jpg" srcset="img/img-maria-01.jpg 1x, img-img-maria-01@2x.jpg 2x" width="391"
-                height="489" alt="Matchmaker Maria">
-            </div>
-
-          </div>
-          <div class="col-lg-7 offset-lg-1">
-            <div class="about__description mb-5 mb-lg-0">
-              <h3 class="highlighted-title highlighted-title__primary">Hello! I’m Matchmaker Maria!</h3>
-              <p>For nearly 15 years, I have successfully combined four generations of family matchmaking tradition with
-                modern
-                relationship psychology and search techniques to ensure my clientele meets their ultimate match. I’m
-                known for giving no
-                nonsense dating advice and practical solutions to people who want to uncover opportunities in meeting
-                someone special.</p>
-              <a href="#" class="btn btn-custom btn-custom__brand">Work with me</a>
+            <div class="header-tools_block d-none d-lg-block">
+              <form  class="d-flex" role="search">
+              <div class="input-group mb-3">
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search">
+                <button class="btn btn-search btn-outline-secondary" type="button" id="button-search">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+              </form>            
             </div>
           </div>
         </div>
+      </div> 
       </div>
-    </section>
-    <section class="section cta-section section-dark">
-      <div class="container">
-        <div class="cta-block">
-          <h2>Listen to the latest <br>
-            Ask a Matchmaker Podcast Episode</h2>
-          <a href="#" class="btn btn-custom btn-custom__outline__brand">Listen</a>
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-custom flex-row flex-lg-column order-0 order-lg-1 py-3">
+        <div class="container justify-content-between justify-content-lg-center">          
+          <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="img/rbd_final_logo.svg" alt=""></a>
+          <button type="button" class="btn btn-outline-light d-flex d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-search"></i>
+          </button>
+          </div>
+          <div class="container justify-content-lg-center">
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+              <div class="offcanvas-header">  
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="img/rbd_final_logo.svg" alt=""></a>              
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body justify-content-lg-center">
+                <ul class="navbar-nav">                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">                      
+                    Get To Know Robin 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Press</a></li>
+                      <li><a class="dropdown-item" href="#">Media</a></li>
+                      <li><a class="dropdown-item" href="#">About Robin</a></li>
+                      <li><a class="dropdown-item" href="#">About Robin Baron Design</a></li>
+                      <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                      <li><a class="dropdown-item" href="#">Brand Ambassador</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">                      
+                      Full-Service Interior Design 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Design Portfolio</a></li>
+                      <li><a class="dropdown-item" href="#">Full Service Design</a></li>
+                      <li><a class="dropdown-item" href="#"> Design by the Hour</a></li>                      
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">                      
+                      Products Designed by Robin 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Lighting for The Minka Group</a></li>
+                                          
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">                      
+                      Design Tips 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Simplifying Fabulous! Blog</a></li>
+                      <li><a class="dropdown-item" href="#">Color Ways</a></li>
+                      <li><a class="dropdown-item" href="#">Tips of The Trade</a></li>
+                      <li><a class="dropdown-item" href="#">Discover Your Style  </a></li>
+                                          
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>          
         </div>
+      </nav>
+  </header>
+  
+  <main>
+    <div id="carouselHero" class="carousel carousel-custom slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselHeros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Final_Cropped_jpeg_-_Portfolio_Slider_1_1856x832.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>CELEBRITY INTERIOR DESIGNER | PRODUCT DESIGNER | CURATOR | MENTOR</h5>
+        <a class="btn btn-custom btn-custom__primary" href="#">Get To Know Robin</a>
       </div>
-    </section>
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide2_v2_2880x1280.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>RENO FOR THE CEO</h5>
+        <a class="btn btn-custom btn-custom__primary" href="#">View Portfolio</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide3_v2_1408x640.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>HOME WITH A PARK VIEW</h5>
+        <a class="btn btn-custom btn-custom__primary" href="#">View Portfolio</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
   </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column footer-column-one">
-          <h4>Services</h4>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="vip-matchmaking.html">VIP Matchmaking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="in-person-retreat.html">In Person Retreats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="agape-intensive.html">Agape Intensive</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-column footer-column-two">
-          <img src="img/logo-secondary.svg" class="img-fluid" alt="">
-          <ul class="social-icons">
-            <li><a href="https://instagram.com" target="_blank" class="icon instagram"><img src="img/icon-instagram.svg"
-                  alt=""></a>
-            </li>
-            <li><a href="https://linkedin.com" target="_blank" class="icon youtube"><img src="img/icon-youtube.svg"
-                  alt=""></a>
-            </li>
-
-            <li><a href="https://facebook.com" target="_blank" class="icon tiktok"><img src="img/icon-tiktok.svg"
-                  alt=""></a>
-            </li>
-            <li><a href="https://twitter.com" target="_blank" class="icon spotify"><img src="img/icon-spotify.svg"
-                  alt=""></a>
-            </li>
-          </ul>
-          <p class="copyright">© 2024 Matchmaker Maria</p>
-        </div>
-
-        <div class="footer-column footer-column-three">
-          <div class="d-flex flex-column flex-md-row gap-md-5 gap-3">
-            <div class="footer-sub-column">
-              <h4>Media</h4>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Press/ Media Kit</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Join My Newsletter</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-sub-column">
-              <h4>Category</h4>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Merch</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Media Kit</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
+  </script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 
 </html>
