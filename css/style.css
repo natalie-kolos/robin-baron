@@ -1303,11 +1303,13 @@ footer ul li svg {
     line-height: 120%;
   }
 }
+.content-main .content-main__description {
+  text-align: center;
+}
 .content-main .content-main__description p {
   margin-left: auto;
   margin-right: auto;
   max-width: 795px;
-  text-align: center;
 }
 .content-main .content-main__body {
   margin-top: 80px;
@@ -1316,6 +1318,10 @@ footer ul li svg {
   .content-main .content-main__body {
     margin-top: 40px;
   }
+}
+.content-main .content-main__body .categories.categories-bottom .categories__block-wrap .categories__block a {
+  align-items: flex-end;
+  text-transform: uppercase;
 }
 .content-main .content-main__body .categories .categories__block-wrap {
   padding: 32px;
