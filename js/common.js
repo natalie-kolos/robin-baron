@@ -95,3 +95,16 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
+
+document.getElementById('categorySelect').addEventListener('change', function() {
+  var selectedCategory = this.value;
+  var cards = document.querySelectorAll('#cardContainer .tips-of-the-trade-block');
+
+  cards.forEach(function(card) {
+    if (selectedCategory == 'all' || card.getAttribute('data-category') == selectedCategory) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});

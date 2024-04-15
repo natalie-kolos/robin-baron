@@ -127,72 +127,119 @@
 
   <main>
     <div class="hero">
-      <img class="img-fluid" src="https://picsum.photos/1920/690" alt=""
-        srcset="https://picsum.photos/1920/690 1x, https://picsum.photos/3840/1380 2x">
+      <div id="carouselEmphasisCaption" class="carousel carousel-custom carousel-emphasis-caption slide mb-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselEmphasisCaption" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselEmphasisCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselEmphasisCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">            
+            <img class="img-fluid d-block w-100" src="https://picsum.photos/1920/690" alt=""
+            srcset="https://picsum.photos/1920/690 1x, https://picsum.photos/3840/1380 2x">
+            <div class="carousel-caption">
+              <div class="banner-text-wrap">
+                <div class="tips-block-category-wrap">
+                  <div class="tips-block-category">featured tip</div>
+                
+                  <div class="tips-block-category">bedroom</div>
+                
+                </div>                
+                  <h3 class="tips-block-title">Lighting, lighting, lighting</h3>                
+                <div class="tips-block-text">
+                  <p>In the bedroom, give yourself as many lighting options as possible. Bedside lamps with multiple brightness options, sconces on dimmer switches, versatile overhead lighting. Look for every option to adjust the lighting to create calm, peace, and mood.
+    </p>
+  </div>
+  <a class="btn btn-custom btn-custom__primary" href="#">Read More</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2_v2_2880x1280.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>RENO FOR THE CEO</h5>
+              <a class="btn btn-custom btn-custom__primary" href="#">View Portfolio</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3_v2_1408x640.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HOME WITH A PARK VIEW</h5>
+              <a class="btn btn-custom btn-custom__primary" href="#">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmphasisCaption" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEmphasisCaption" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <section class="content-main">
       <div class="container">
         <div class="content-main__title text-center">
-          <h1>TESTIMONIALS</h1>
+          <h1>Robin’s Tips of the Trade</h1>
         </div>
         <div class="content-main__description">
-          <p>Find out more about Robin…who she is, what makes her tick and why she is uniquely positioned to help you
-            gain confidence in your home.</p>
+          <p>Quick, easy, and essential. These Tips of the Trade are Robin’s hints, tricks, and tidbits to help you feel
+            like a true interior-design insider. After 30 years Robin has collected quite a list—let’s dive in!</p>
         </div>
         <div class="content-main__body">
-          <div class="testimonials-section">
-            <div class="testimonials-block">
-              <h2 class="testimonials-title">Robin is the best choice ever.</h2>
-              <div class="testimonials-content">
-                <p>We interviewed quite a few designers and I knew right away that I was hiring Robin Baron before she
-                  left our first meeting. Robin carefully listened to both my husband and me who have very different
-                  tastes and needs. I felt listened to throughout the entire process...as did my picky husband!</p>
-                <p>We purchased our home from plans before it was built and Robin and her team designed it from the
-                  ground up. They helped turn our vision into the home of our dreams. We each got our big and little
-                  needs met with elegance and warmth. Shopping with Robin for our home was so much fun, and watching her
-                  select items was fascinating! Since we’ve moved in, my husband and I can’t stop talking about the
-                  elegance, charm and warmth that Robin created just for us. We made the best choice ever!!</p>
+          <select id="categorySelect" class="form-select" aria-label="Category Filter">
+            <option value="all" selected>All</option>
+            <option value="outdoor">Outdoor Spaces</option>
+            <option value="living">LIVING ROOM / FAMILY ROOM / DEN</option>
+          </select>
+          
+          <div id="cardContainer" class="tips-blocks-section">
+            <article data-category="outdoor" class="tips-of-the-trade-block">
+              <div class="tips-block-image">
+                <figure>
+                  <img class="img-fluid" src="https://picsum.photos/1920/690" alt=""
+                    srcset="https://picsum.photos/362/300 1x, https://picsum.photos/724/600 2x">
+                </figure>
               </div>
-              <h4 class="testimonials-client-name">Rene S., Manhasset, NY</h4>
-            </div>
-            <div class="testimonials-block">
-              <h2 class="testimonials-title">Robin’s designs are beautiful and functional.</h2>
-              <div class="testimonials-content">
-                <p>I have worked with Robin several times over the years, and while I immediately knew I loved the
-                  results of this last decorating upgrade, the endless time spent at home since the pandemic began has
-                  given me a special appreciation of everything she has done. Not only is everything beautiful, it is
-                  also functional. The new dining room built-in that Robin designed for me is an absolute life-changer!
-                  I just want you to know how often I think of Robin gratefully, as I’m sitting here loving my
-                  surroundings.</p>
+              <div class="tips-block-content">
+                <div class="tips-block-category-wrap border-top">
+                  <div class="tips-block-category">OUTDOOR SPACES</div>
+                </div>
+                <h3 class="tips-block-title">Take your indoor vibe outside</h3>
+
+                <div class="tips-block-text">
+                  <p>Though it’s outside, these open-air spaces are often just as
+                    visited as our home inside. Think of these outdoor spaces as an extension of your indoor style.
+                    It’s an outdoor dining room, another living room. Make it beautiful, enjoyable, and comfortable to
+                    experience.</p>
+                </div>
               </div>
-              <h4 class="testimonials-client-name">S.R., New York, NY</h4>
-            </div>
-            <div class="testimonials-block">
-              <h2 class="testimonials-title">Robin is the best choice ever.</h2>
-              <div class="testimonials-content">
-                <p>We interviewed quite a few designers and I knew right away that I was hiring Robin Baron before she
-                  left our first meeting. Robin carefully listened to both my husband and me who have very different
-                  tastes and needs. I felt listened to throughout the entire process...as did my picky husband!</p>
-                <p>We purchased our home from plans before it was built and Robin and her team designed it from the
-                  ground up. They helped turn our vision into the home of our dreams. We each got our big and little
-                  needs met with elegance and warmth. Shopping with Robin for our home was so much fun, and watching her
-                  select items was fascinating! Since we’ve moved in, my husband and I can’t stop talking about the
-                  elegance, charm and warmth that Robin created just for us. We made the best choice ever!!</p>
+            </article>
+            <article data-category="living" class="tips-of-the-trade-block">
+              <div class="tips-block-image">
+                <figure>
+                  <img class="img-fluid" src="https://picsum.photos/1920/690" alt=""
+                    srcset="https://picsum.photos/362/300 1x, https://picsum.photos/724/600 2x">
+                </figure>
               </div>
-              <h4 class="testimonials-client-name">Rene S., Manhasset, NY</h4>
-            </div>
-            <div class="testimonials-block">
-              <h2 class="testimonials-title">Robin’s designs are beautiful and functional.</h2>
-              <div class="testimonials-content">
-                <p>I have worked with Robin several times over the years, and while I immediately knew I loved the
-                  results of this last decorating upgrade, the endless time spent at home since the pandemic began has
-                  given me a special appreciation of everything she has done. Not only is everything beautiful, it is
-                  also functional. The new dining room built-in that Robin designed for me is an absolute life-changer!
-                  I just want you to know how often I think of Robin gratefully, as I’m sitting here loving my
-                  surroundings.</p>
+              <div class="tips-block-content">
+                <div class="tips-block-category-wrap border-top">
+                  <div class="tips-block-category">LIVING ROOM / FAMILY ROOM / DEN</div>
+                </div>
+                <h3 class="tips-block-title">Take your indoor vibe outside</h3>
+
+                <div class="tips-block-text">
+                  <p>Though it’s outside, these open-air spaces are often just as
+                    visited as our home inside. Think of these outdoor spaces as an extension of your indoor style.
+                    It’s an outdoor dining room, another living room. Make it beautiful, enjoyable, and comfortable to
+                    experience.</p>
+                </div>
               </div>
-              <h4 class="testimonials-client-name">S.R., New York, NY</h4>
-            </div>
+            </article>
           </div>
           <section class="testimonials">
             <div class="testimonials-list">
@@ -320,6 +367,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/common.js"></script>
+  
 </body>
 
 </html>

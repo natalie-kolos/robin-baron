@@ -1309,6 +1309,14 @@ footer ul li svg {
   max-width: 795px;
   text-align: center;
 }
+.content-main .content-main__body {
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .content-main .content-main__body {
+    margin-top: 40px;
+  }
+}
 .content-main .content-main__body .categories .categories__block-wrap {
   padding: 32px;
 }
@@ -1408,4 +1416,144 @@ footer ul li svg {
   max-width: 600px;
   line-height: 120%;
   font-weight: 500;
+}
+.testimonials-section .testimonials-block {
+  background-color: #f7f5f3;
+  padding: 70px 100px 55px 160px;
+  position: relative;
+}
+@media (max-width: 575px) {
+  .testimonials-section .testimonials-block {
+    padding: 30px 30px 30px 55px;
+  }
+}
+.testimonials-section .testimonials-block + .testimonials-block {
+  margin-top: 32px;
+}
+.testimonials-section .testimonials-block:nth-child(2n) {
+  background-color: #e2e6d8;
+}
+.testimonials-section .testimonials-block:nth-child(2n):before {
+  background-image: url(../img/double-quote-icon-dark.png);
+}
+.testimonials-section .testimonials-block:before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 68px;
+  background-image: url(../img/double-quote-icon-light.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 60px;
+  height: 52px;
+}
+@media (max-width: 575px) {
+  .testimonials-section .testimonials-block:before {
+    width: 30px;
+    left: 15px;
+    height: 30px;
+    top: 22px;
+  }
+}
+.testimonials-section .testimonials-block .testimonials-title {
+  color: #889466;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+@media (max-width: 575px) {
+  .testimonials-section .testimonials-block .testimonials-title {
+    font-size: 22px;
+  }
+}
+.testimonials-section .testimonials-block .testimonials-content {
+  max-width: calc(100% - 362px);
+  flex: 0 0 calc(100% - 362px);
+}
+.testimonials-section .testimonials-block .testimonials-content p {
+  margin-bottom: 15px;
+}
+.testimonials-section .testimonials-block .testimonials-content p:last-child {
+  margin-bottom: 0;
+}
+.testimonials-section .testimonials-block .testimonials-client-name {
+  color: #aa6141;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.border-top {
+  position: relative;
+  border-top: none !important;
+}
+.border-top.border-top:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 144px;
+  height: 6px;
+  background-color: #c2cca4;
+}
+.tips-blocks-section .tips-of-the-trade-block {
+  display: flex;
+  margin-bottom: 32px;
+}
+@media (max-width: 991px) {
+  .tips-blocks-section .tips-of-the-trade-block {
+    flex-direction: column;
+  }
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-image {
+  padding: 0;
+  height: auto;
+  flex: 0 0 362px;
+  max-width: 362px;
+  width: 100%;
+  position: relative;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-image figure {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-image figure img {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-content {
+  padding: 40px 56px 44px;
+  background-color: #f7f5f3;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-content .tips-block-category-wrap .tips-block-category {
+  padding-top: 12px;
+  margin-bottom: 16px;
+  color: #889466;
+  text-transform: uppercase;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-content .tips-block-category-wrap .tips-block-category:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-content .tips-block-category-wrap.border-top {
+  margin-bottom: 16px;
+}
+.tips-blocks-section .tips-of-the-trade-block .tips-block-content .tips-block-category-wrap.border-top::before {
+  height: 3px;
+  width: 80px;
+}
+.form-select {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 50%;
+}
+@media (max-width: 991px) {
+  .form-select {
+    max-width: 100%;
+  }
 }
