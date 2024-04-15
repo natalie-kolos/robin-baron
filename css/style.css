@@ -1530,6 +1530,11 @@ footer ul li svg {
   padding: 40px 56px 44px;
   background-color: #f7f5f3;
 }
+@media (max-width: 575px) {
+  .tips-blocks-section .tips-of-the-trade-block .tips-block-content {
+    padding: 32px;
+  }
+}
 .tips-blocks-section .tips-of-the-trade-block .tips-block-content .tips-block-category-wrap .tips-block-category {
   padding-top: 12px;
   margin-bottom: 16px;
@@ -1556,4 +1561,51 @@ footer ul li svg {
   .form-select {
     max-width: 100%;
   }
+}
+@media (max-width: 991px) {
+  .carousel-emphasis-caption .carousel-indicators {
+    bottom: -40px;
+  }
+}
+@media (max-width: 991px) {
+  .carousel-emphasis-caption .carousel-indicators [data-bs-target] {
+    background-color: #889466;
+  }
+}
+.carousel-emphasis-caption .carousel-caption {
+  top: 10%;
+  bottom: 10%;
+  background: #e2e6d8;
+  left: auto;
+  right: 11%;
+  width: 540px;
+  padding: 4%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #393939;
+  border-top: 9px solid #c2cca4;
+}
+@media (max-width: 991px) {
+  .carousel-emphasis-caption .carousel-caption {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
+.carousel-emphasis-caption .carousel-caption .tips-block-category-wrap {
+  display: flex;
+}
+.carousel-emphasis-caption .carousel-caption .tips-block-category-wrap .tips-block-category {
+  text-transform: uppercase;
+  color: #889466;
+}
+.carousel-emphasis-caption .carousel-caption .tips-block-category-wrap .tips-block-title {
+  margin-bottom: 24px;
+  font-size: 28px;
+  line-height: 36px;
+  color: #393939;
+}
+.carousel-emphasis-caption .carousel-caption .tips-block-category-wrap .tips-block-text p {
+  color: #393939;
 }
