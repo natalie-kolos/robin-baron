@@ -930,7 +930,7 @@ h6 {
   font-weight: 600;
 }
 .btn-custom {
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-weight: 600;
   letter-spacing: 0.04em;
   border-radius: 2px;
@@ -1252,6 +1252,12 @@ footer ul li svg {
 .content-main.text-page-simple::before {
   content: '';
 }
+.content-main.content-main__simple::before {
+  content: "";
+}
+.content-main.content-main__simple::after {
+  content: "";
+}
 .content-main::before {
   content: url(../img/page-top-graphic1.png);
   position: absolute;
@@ -1263,6 +1269,9 @@ footer ul li svg {
 }
 .content-main .content-main__title {
   position: relative;
+}
+.content-main .content-main__title svg {
+  max-width: 515px;
 }
 .content-main .content-main__title:after {
   content: "";
@@ -1491,6 +1500,7 @@ footer ul li svg {
 .border-top {
   position: relative;
   border-top: none !important;
+  padding-top: 12px;
 }
 .border-top.border-top:before {
   content: "";
@@ -1703,4 +1713,145 @@ footer ul li svg {
 }
 .pagination-custom .page-item {
   margin: 0 2px;
+}
+.blog-listing-section .blog-post {
+  margin-bottom: 24px;
+}
+.blog-listing-section .blog-post .blog-content {
+  background-color: #f7f5f3;
+  padding: 60px 44px 60px 54px;
+  position: relative;
+  max-width: calc(100% - 400px);
+  flex: 0 0 calc(100% - 400px);
+}
+@media (max-width: 1199px) {
+  .blog-listing-section .blog-post .blog-content {
+    padding: 40px 30px;
+    max-width: calc(100% - 300px);
+    flex: 0 0 calc(100% - 300px);
+  }
+}
+@media (max-width: 991px) {
+  .blog-listing-section .blog-post .blog-content {
+    padding: 40px 30px;
+    max-width: 100%;
+    flex: 100%;
+  }
+}
+.blog-listing-section .blog-post .blog-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -295px;
+  width: 295px;
+  background-color: inherit;
+}
+@media (max-width: 1199px) {
+  .blog-listing-section .blog-post .blog-content::after {
+    right: -225px;
+    width: 225px;
+  }
+}
+@media (max-width: 991px) {
+  .blog-listing-section .blog-post .blog-content::after {
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: 70px;
+  }
+}
+.blog-listing-section .blog-post .blog-content .post-date {
+  letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 0;
+  text-align: left;
+  color: #393939;
+  max-width: 100%;
+  padding-top: 12px;
+}
+.blog-listing-section .blog-post .blog-content .post-title {
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.blog-listing-section .blog-post .blog-content .post-content {
+  position: relative;
+  z-index: 500;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+.blog-listing-section .blog-post .blog-post-image {
+  z-index: 1;
+  position: relative;
+  padding: 0;
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+@media (max-width: 1199px) {
+  .blog-listing-section .blog-post .blog-post-image {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .blog-listing-section .blog-post .blog-post-image {
+    margin: 0 auto;
+  }
+}
+.blog-listing-section .blog-post .blog-post-image figure {
+  height: 270px;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .blog-listing-section .blog-post .blog-post-image figure {
+    height: 189px;
+  }
+}
+.blog-sidebar {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+}
+@media (max-width: 991px) {
+  .blog-sidebar {
+    padding-left: 0;
+  }
+}
+.blog-sidebar .signup-for-blog {
+  background-color: #f7f5f3;
+  border-top: 7.5px solid #C2CCA4;
+  padding: 25px 15px 38px;
+  text-align: center;
+}
+.blog-sidebar .signup-for-blog h4 {
+  font-size: 21px;
+  color: #889466;
+  line-height: 120%;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.blog-sidebar .robin-barons-quote img {
+  margin-bottom: 24px;
+}
+.blog-sidebar .testimonials {
+  margin: 0;
+}
+.blog-sidebar .testimonials .testimonials-list .testimonials-item {
+  min-height: 470px;
+}
+.content-blog {
+  padding-top: 40px;
+}
+.content-blog .content-main__body {
+  margin-top: 40px;
 }

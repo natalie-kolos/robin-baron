@@ -47,7 +47,7 @@ h6 {
 }
 
 .btn-custom {
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-weight: 600;
   letter-spacing: 0.04em;
   border-radius: @border-radius-sm;
@@ -481,6 +481,16 @@ footer {
     }
   }
 
+  &.content-main__simple {
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      content: "";
+    }
+  }
+
   &::before {
     content: url(../img/page-top-graphic1.png);
     position: absolute;
@@ -493,6 +503,10 @@ footer {
 
   .content-main__title {
     position: relative;
+
+    svg {
+      max-width: 515px;
+    }
 
     &:after {
       content: "";
@@ -763,6 +777,7 @@ footer {
 .border-top {
   position: relative;
   border-top: none !important;
+  padding-top: 12px;
 
   &.border-top {
     &:before {
@@ -975,6 +990,7 @@ footer {
         padding: 6%;
         border-top: 0;
         position: relative;
+
         @media @breakpoint-mobile-sm {
           padding: 6% 0;
         }
@@ -985,8 +1001,10 @@ footer {
           text-transform: none;
           margin-bottom: 16px;
         }
-        .tips-block-title{
+
+        .tips-block-title {
           font-size: 36px;
+
           @media @breakpoint-mobile-sm {
             font-size: 26px;
           }
@@ -1020,5 +1038,161 @@ footer {
 
   .page-item {
     margin: 0 2px;
+  }
+}
+
+.blog-listing-section {
+  .blog-post {
+    margin-bottom: 24px;
+
+    .blog-content {
+      background-color: @neutral;
+      padding: 60px 44px 60px 54px;
+      position: relative;
+      max-width: calc(100% - 400px);
+      flex: 0 0 calc(100% - 400px);
+
+      @media @breakpoint-tablet-xl {
+        padding: 40px 30px;
+        max-width: calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
+      }
+
+      @media @breakpoint-tablet {
+        padding: 40px 30px;
+        max-width: 100%;
+        flex: 100%;
+      }
+
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -295px;
+        width: 295px;
+        background-color: inherit;
+
+        @media @breakpoint-tablet-xl {
+          right: -225px;
+          width: 225px;
+        }
+
+        @media @breakpoint-tablet {
+          width: 100%;
+          top: -70px;
+          left: 0;
+          right: 0;
+          bottom: auto;
+          height: 70px;
+        }
+      }
+
+      .post-date {
+        letter-spacing: normal;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        margin-top: 0;
+        text-align: left;
+        color: #393939;
+        max-width: 100%;
+        padding-top: 12px;
+      }
+
+      .post-title {
+        font-size: 36px;
+        line-height: 120%;
+        font-weight: 500;
+        margin-bottom: 18px;
+      }
+
+      .post-content {
+        position: relative;
+        z-index: 500;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+
+      }
+    }
+
+
+
+    .blog-post-image {
+      z-index: 1;
+      position: relative;
+      padding: 0;
+      flex: 0 0 400px;
+      max-width: 400px;
+
+      @media @breakpoint-tablet-xl {
+        flex: 0 0 300px;
+        max-width: 300px;
+      }
+
+      @media @breakpoint-tablet {
+        margin: 0 auto;
+      }
+
+      figure {
+        height: 270px;
+        width: 100%;
+        position: relative;
+
+        @media @breakpoint-tablet {
+          height: 189px;
+        }
+      }
+    }
+  }
+}
+
+.blog-sidebar {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+  @media @breakpoint-tablet {
+    padding-left: 0;
+  }
+
+  .signup-for-blog {
+    background-color: @neutral;
+    border-top: 7.5px solid #C2CCA4;
+    padding: 25px 15px 38px;
+    text-align: center;
+
+    h4 {
+      font-size: 21px;
+      color: @primary-dark;
+      line-height: 120%;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+  }
+
+  .robin-barons-quote {
+    img {
+      margin-bottom: 24px;
+    }
+  }
+
+  .testimonials {
+    margin: 0;
+    .testimonials-list {
+      .testimonials-item {
+        min-height: 470px;
+      }
+    }
+  }
+}
+
+.content-blog{
+  padding-top: 40px;
+  .content-main__body{
+    margin-top: 40px;
   }
 }
