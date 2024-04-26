@@ -954,6 +954,16 @@ h6 {
   background-color: #aa6141;
   border-color: #aa6141;
 }
+.btn-custom.btn-custom__secondary {
+  color: #fff;
+  background-color: #aa6141;
+  transition: all 0.4s ease-in-out;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #889466;
+  border-color: #889466;
+}
 .btn-custom.btn-custom__outline__white {
   background-color: transparent;
   color: #fff;
@@ -1919,21 +1929,84 @@ footer ul li svg {
   font-size: 40px;
   font-weight: 500;
 }
+.step-block .step-block-title {
+  color: #889466;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
 .full-service-design-steps .step-block-wrap {
   padding: 38px 16px 0;
+}
+@media (max-width: 1199px) {
+  .full-service-design-steps .step-block-wrap {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .full-service-design-steps .step-block-wrap {
+    margin-top: 80px;
+  }
 }
 .full-service-design-steps .step-block-wrap .step-block {
   padding-left: 15px;
   padding-right: 15px;
+}
+.full-service-design-steps .step-block-wrap .step-block-title {
+  font-size: 30px;
+  min-height: 72px;
+}
+@media (max-width: 1199px) {
+  .full-service-design-steps .step-block-wrap .step-block-title {
+    font-size: 22px;
+    min-height: auto;
+  }
+}
+.full-service-design-steps .step-block-wrap.step-block-image .step-block {
+  padding: 0 !important;
+  border-top: 0;
+  background-color: transparent;
 }
 .expert-design-advice-steps .step-block {
   border-top: 8px solid #c2cca4;
   padding: 100px 55px 70px;
   justify-content: flex-start;
 }
+@media (max-width: 1199px) {
+  .expert-design-advice-steps .step-block {
+    padding: 80px 30px 70px;
+  }
+}
+@media (max-width: 575px) {
+  .expert-design-advice-steps .step-block {
+    padding: 50px 15px;
+  }
+}
 .expert-design-advice-steps .step-block .number {
   position: absolute;
   top: -45.5px;
   left: 0;
   right: 0;
+}
+.book-appointment-button-wrap {
+  text-align: center;
+  margin-top: 68px;
+  justify-content: center;
+}
+.book-appointment-button-wrap a {
+  max-width: 450px;
+}
+.sec-info {
+  margin-top: 32px;
+}
+.sec-info .sub-title .sub-title {
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 8px;
+  text-transform: none;
+}
+.sec-info .sub-title p {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 500;
 }

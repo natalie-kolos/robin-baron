@@ -76,6 +76,18 @@ h6 {
     border-color: @secondary;
   }
 
+  &.btn-custom__secondary {
+    color: @white;
+    background-color: @secondary;
+    transition: @transition;
+  }
+
+  &:hover {
+    color: @white;
+    background-color: @primary-dark;
+    border-color: @primary-dark;
+  }
+
 
 
   &.btn-custom__outline__white {
@@ -1264,6 +1276,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   .number {
     width: 91px;
     height: 91px;
@@ -1276,29 +1289,104 @@ footer {
     color: #889466;
     font-size: 40px;
     font-weight: 500;
-}
+  }
+
+  .step-block-title {
+    color: @primary-dark;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
 }
 
-.full-service-design-steps{
-  .step-block-wrap{
+.full-service-design-steps {
+  .step-block-wrap {
     padding: 38px 16px 0;
+
+    @media @breakpoint-tablet-xl {
+      padding: 0 15px;
+    }
+
+    @media @breakpoint-tablet-xl {
+      margin-top: 80px;
+    }
+
     .step-block {
       padding-left: 15px;
       padding-right: 15px;
+    }
+
+    .step-block-title {
+      font-size: 30px;
+      min-height: 72px;
+
+      @media @breakpoint-tablet-xl {
+        font-size: 22px;
+        min-height: auto;
+      }
+    }
+
+    &.step-block-image {
+      .step-block {
+        padding: 0 !important;
+        border-top: 0;
+        background-color: transparent;
+      }
+    }
+
   }
-  }
+
 }
 
 .expert-design-advice-steps {
-.step-block {
-  border-top: 8px solid @primary;
-  padding: 100px 55px 70px;
-  justify-content: flex-start;
-  .number {
-    position: absolute;
-    top: -45.5px;
-    left: 0;
-    right: 0;
+  .step-block {
+    border-top: 8px solid @primary;
+    padding: 100px 55px 70px;
+    justify-content: flex-start;
+
+    @media @breakpoint-tablet-xl {
+      padding: 80px 30px 70px;
+    }
+
+    @media @breakpoint-mobile-sm {
+      padding: 50px 15px;
+    }
+
+    .number {
+      position: absolute;
+      top: -45.5px;
+      left: 0;
+      right: 0;
+    }
+  }
 }
+
+.book-appointment-button-wrap {
+  text-align: center;
+  margin-top: 68px;
+  justify-content: center;
+
+  a {
+    max-width: 450px;
+  }
+
 }
+
+.sec-info {
+  margin-top: 32px;
+
+  .sub-title {
+    .sub-title {
+      font-size: 18px;
+      line-height: 21.6px;
+      margin-bottom: 8px;
+      text-transform: none;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16.8px;
+      font-weight: 500;
+    }
+  }
 }
