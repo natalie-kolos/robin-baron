@@ -2137,3 +2137,59 @@ footer ul li svg {
   font-weight: 500;
   margin: 0;
 }
+.style-block-wrap {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .style-block-wrap {
+    margin-bottom: 24px;
+  }
+}
+.style-block-wrap .style-block-image {
+  padding: 0;
+  min-height: 430px;
+}
+.style-block-wrap:nth-child(odd) .style-block-image {
+  order: 2;
+}
+@media (max-width: 767px) {
+  .style-block-wrap:nth-child(odd) .style-block-image {
+    order: 1;
+  }
+}
+.style-block-wrap:nth-child(odd) .style-block {
+  order: 1;
+}
+@media (max-width: 767px) {
+  .style-block-wrap:nth-child(odd) .style-block {
+    order: 2;
+  }
+}
+.style-block-wrap .style-block {
+  padding: 60px 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f7f5f3;
+}
+.style-block-wrap .style-block .style-block-title {
+  color: #889466;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+.full-height-image figure {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.full-height-image figure img {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  font-family: "object-fit: cover;";
+}

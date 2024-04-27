@@ -1500,12 +1500,13 @@ footer {
 
     .sec-robin-is-here-text {
       padding: 68px 75px;
+
       @media @breakpoint-tablet {
-        padding: 44px 56px;        
+        padding: 44px 56px;
       }
-      
+
       @media @breakpoint-mobile {
-        padding: 32px;        
+        padding: 32px;
       }
 
       .sec-title {
@@ -1543,4 +1544,74 @@ footer {
       }
     }
   }
+}
+
+.style-block-wrap {
+  margin: 0;
+
+  @media @breakpoint-mobile {
+   margin-bottom: 24px;
+  }
+
+  .style-block-image {
+    padding: 0;
+    min-height: 430px;
+  }
+
+  &:nth-child(odd) {
+    .style-block-image {
+      order: 2;
+
+      @media @breakpoint-mobile {
+        order: 1;
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    .style-block {
+      order: 1;
+
+      @media @breakpoint-mobile {
+        order: 2;
+      }
+    }
+  }
+
+  .style-block {
+    padding: 60px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: @neutral;
+
+    .style-block-title {
+      color: @primary-dark;
+      font-size: 36px;
+      line-height: 120%;
+      margin-bottom: 25px;
+    }
+
+  }
+}
+
+.full-height-image {
+
+  figure {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      margin: auto;
+      height: 100%;
+      object-fit: cover;
+      -o-object-fit: cover;
+      font-family: "object-fit: cover;";
+    }
+  }
+
 }
