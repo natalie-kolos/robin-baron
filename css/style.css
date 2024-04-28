@@ -2193,3 +2193,19 @@ footer ul li svg {
   -o-object-fit: cover;
   font-family: "object-fit: cover;";
 }
+.contact-us-form-title-section {
+  margin-top: 95px;
+}
+.contact-us-form-title-section .contact-us-form-title {
+  text-align: center;
+  font-weight: 500;
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 21px;
+}
+.hear-from-you-section-content {
+  padding-left: 15px;
+}
+.hear-from-you-section-content .hear-from-you-block h3 {
+  font-size: 24px;
+}
