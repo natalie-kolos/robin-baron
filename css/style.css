@@ -2239,3 +2239,113 @@ footer ul li svg {
   letter-spacing: 0;
   text-transform: inherit;
 }
+.share-buttons {
+  margin: 30px auto 40px;
+  cursor: pointer;
+}
+.share-buttons a {
+  display: inline-block;
+  height: 22px;
+  margin: 0 5px;
+  vertical-align: text-top;
+  color: #889466;
+}
+.share-buttons a svg {
+  height: 13px;
+}
+.share-buttons .section-title {
+  display: inline-block;
+  width: auto;
+  margin-right: 12px;
+  font-size: 0.92857rem;
+}
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  z-index: 100;
+  font-size: 2.5em;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #B7B7B7;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #000;
+  opacity: 0.3;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-next:hover {
+  opacity: 0.65;
+}
+.slick-slider .slick-prev {
+  left: 0;
+}
+.slick-slider .slick-next {
+  right: 0;
+}
+#detail .product-images {
+  width: 100%;
+  margin: 0 auto;
+}
+#detail .product-images li,
+#detail .product-images figure,
+#detail .product-images a,
+#detail .product-images img {
+  display: block;
+  outline: none;
+  border: none;
+}
+#detail .product-images .main-img-slider figure {
+  margin: 0 auto;
+  padding: 0 2em;
+}
+#detail .product-images .main-img-slider figure a {
+  cursor: pointer, -webkit-zoom-in, -moz-zoom-in, zoom-in;
+}
+#detail .product-images .main-img-slider figure a img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#detail .product-images .thumb-nav {
+  margin: 0 auto;
+  padding: 20px 10px;
+  max-width: 600px;
+}
+#detail .product-images .thumb-nav.slick-slider .slick-prev,
+#detail .product-images .thumb-nav.slick-slider .slick-next {
+  font-size: 1.2em;
+  height: 20px;
+  width: 26px;
+  margin-top: -10px;
+}
+#detail .product-images .thumb-nav.slick-slider .slick-prev {
+  margin-left: -30px;
+}
+#detail .product-images .thumb-nav.slick-slider .slick-next {
+  margin-right: -30px;
+}
+#detail .product-images .thumb-nav li {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#detail .product-images .thumb-nav li img {
+  display: block;
+  width: 100%;
+  max-width: 75px;
+  margin: 0 auto;
+  transition: border-color 0.25s;
+}
+#detail .product-images .thumb-nav li:hover,
+#detail .product-images .thumb-nav li:focus {
+  border-color: #f7f5f3;
+}
+#detail .product-images .thumb-nav li.slick-current img {
+  border-color: #c2cca4;
+}
+#detail .product-gallery {
+  margin-bottom: 40px;
+}

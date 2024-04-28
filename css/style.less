@@ -1550,7 +1550,7 @@ footer {
   margin: 0;
 
   @media @breakpoint-mobile {
-   margin-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   .style-block-image {
@@ -1618,52 +1618,58 @@ footer {
 
 .contact-us-form-title-section {
   margin-top: 95px;
+
   .contact-us-form-title {
     text-align: center;
     font-weight: 500;
     max-width: 550px;
     margin: 0 auto;
     font-size: 21px;
-}
+  }
 }
 
 
 
 .hear-from-you-section-content {
   padding-left: 15px;
-  .hear-from-you-block{
-    h3{
+
+  .hear-from-you-block {
+    h3 {
       font-size: 24px;
     }
   }
 }
 
-.collections-list-item{
+.collections-list-item {
   text-align: center;
   margin-bottom: 24px;
-  .thumbnail{
-    a{
+
+  .thumbnail {
+    a {
       display: block;
-       img {
+
+      img {
         display: block;
         margin: 0 auto;
-    }
+      }
     }
 
   }
-  .collection-title{
+
+  .collection-title {
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    a{
+
+    a {
       color: @text-primary-light;
       font-weight: 500;
     }
   }
 }
 
-.product-list-item{
-  
+.product-list-item {
+
   .product-list-item-title {
     font-family: Nunito Sans, sans-serif;
     font-style: normal;
@@ -1673,5 +1679,133 @@ footer {
     text-transform: none;
     letter-spacing: 0;
     text-transform: inherit;
+  }
+}
+
+.share-buttons {
+  margin: 30px auto 40px;
+  cursor: pointer;
+
+  a {
+    display: inline-block;
+    height: 22px;
+    margin: 0 5px;
+    vertical-align: text-top;
+    color: @primary-dark;
+    svg {
+      height: 13px;
+  }
+  }
+  .section-title {
+    display: inline-block;
+    width: auto;
+    margin-right: 12px;
+    font-size: .92857rem;
 }
 }
+
+.slick-slider .slick-prev, .slick-slider .slick-next {
+  z-index: 100;
+  font-size: 2.5em;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #B7B7B7;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #000;
+  opacity: .3;
+  transition: opacity .25s;
+  cursor: pointer;
+}
+.slick-slider .slick-prev:hover, .slick-slider .slick-next:hover {
+  opacity: .65;
+}
+.slick-slider .slick-prev {
+  left: 0;
+}
+.slick-slider .slick-next {
+  right: 0;
+}
+
+#detail {
+  .product-images {
+    width: 100%;
+    margin: 0 auto;   
+
+    li, figure, a, img {
+      display: block;
+      outline: none;
+      border: none;
+    }
+    
+
+    .main-img-slider {
+      figure {
+        margin: 0 auto;
+        padding: 0 2em;
+
+        a {
+          cursor: pointer, -webkit-zoom-in, -moz-zoom-in, zoom-in;
+
+          img {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .thumb-nav {
+      margin: 0 auto;
+      padding: 20px 10px;
+      max-width: 600px;
+
+      &.slick-slider {
+        .slick-prev, .slick-next {
+          font-size: 1.2em;
+          height: 20px;
+          width: 26px;
+          margin-top: -10px;
+        }
+
+        .slick-prev {
+          margin-left: -30px;
+        }
+
+        .slick-next {
+          margin-right: -30px;
+        }
+      }
+
+      li {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 75px;
+          margin: 0 auto;          
+          transition: border-color .25s;
+        }
+
+        &:hover, &:focus {
+          border-color: @neutral;
+        }
+
+        &.slick-current img {
+          border-color: @primary;
+        }
+      }
+    }
+  }
+  .product-gallery{
+    margin-bottom: 40px;
+  }
+}
+
+
