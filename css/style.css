@@ -2349,3 +2349,21 @@ footer ul li svg {
 #detail .product-gallery {
   margin-bottom: 40px;
 }
+.slider-nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.slider-nav .slick-dots {
+  position: relative;
+  bottom: 0;
+}
+.slider-nav-item img {
+  margin: 0 auto;
+}
+.slider-nav-item .palette-name {
+  text-align: center;
+  padding: 24px 40px;
+}
+.palette-featured-image-bottom-note {
+  margin-top: 40px;
+}

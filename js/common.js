@@ -39,15 +39,24 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
+  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>',
     fade: true,
     useTransform: true,
     asNavFor: ".slider-nav"
   });
   $(".slider-nav").slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: ".slider-single",
+    centerMode: true,
     dots: true,
+    prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
+  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>',
+    customPaging: function(slider, i) {
+      // Вставляем ваш HTML с динамическим изменением цвета фона
+      return '<a style="background: #000; border-radius: 50%; display: inline-block; width: 20px; height: 20px;"></a>';
+    },
     focusOnSelect: true
   });
   $(".gallery-carousel").slick({
@@ -126,11 +135,11 @@ $('#detail .main-img-slider').slick({
   speed: 300,
   lazyLoad: 'ondemand',
   asNavFor: '.thumb-nav',
-  prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable">Previous</span></div>',
-  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable">Next</span></div>'
+  prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
+  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>'
 });
 // Thumbnail/alternates slider for product page
-$('.thumb-nav').slick({
+$('#product-thumb .thumb-nav').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   infinite: true,
@@ -141,8 +150,8 @@ $('.thumb-nav').slick({
   draggable: true,
   speed:200,
   focusOnSelect: true,
-  prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable">Previous</span></div>',
-  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable">Next</span></div>'  
+  prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
+  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>'  
 });
 
 
@@ -152,4 +161,16 @@ $('.main-img-slider').on('afterChange', function(event, slick, currentSlide, nex
   $('.thumb-nav .slick-slide').removeClass('slick-current');
   //set active class for current slide
   $('.thumb-nav .slick-slide:not(.slick-cloned)').eq(currentSlide).addClass('slick-current');  
+});
+
+$(document).ready(function(){
+  var colors = ["#f0bcc9", "#a1c4fd", "#ffecd2", "#ff9a9e", "#fbc2eb"]; // Массив цветов для индикаторов
+
+  $('.slider-nav').slick({
+    dots: true,  // Включаем точки
+    customPaging: function(slider, i) {
+      // Вставляем ваш HTML с динамическим изменением цвета фона
+      return '<a style="background: ' + colors[i] + '; border-radius: 50%; display: inline-block; width: 20px; height: 20px;"></a>';
+    }
+  });
 });
