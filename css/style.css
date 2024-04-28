@@ -1299,7 +1299,7 @@ footer ul li svg {
   margin: 0 auto;
   width: 403px;
   height: 38px;
-  z-index: 0;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   .content-main .content-main__title:after {
