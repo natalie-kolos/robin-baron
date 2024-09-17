@@ -39,25 +39,28 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
-  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>',
     fade: true,
     useTransform: true,
     asNavFor: ".slider-nav"
   });
   $(".slider-nav").slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerPadding: '60px',
     asNavFor: ".slider-single",
     centerMode: true,
     dots: true,
-    prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"></span></div>',
-  nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable"></span></div>',
-    customPaging: function(slider, i) {
-      // Вставляем ваш HTML с динамическим изменением цвета фона
-      return '<a style="background: #000; border-radius: 50%; display: inline-block; width: 20px; height: 20px;"></a>';
-    },
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
+        },
+      },
+    ],
   });
   $(".gallery-carousel").slick({
     dots: true,
@@ -163,14 +166,4 @@ $('.main-img-slider').on('afterChange', function(event, slick, currentSlide, nex
   $('.thumb-nav .slick-slide:not(.slick-cloned)').eq(currentSlide).addClass('slick-current');  
 });
 
-$(document).ready(function(){
-  var colors = ["#f0bcc9", "#a1c4fd", "#ffecd2", "#ff9a9e", "#fbc2eb"]; // Массив цветов для индикаторов
 
-  $('.slider-nav').slick({
-    dots: true,  // Включаем точки
-    customPaging: function(slider, i) {
-      // Вставляем ваш HTML с динамическим изменением цвета фона
-      return '<a style="background: ' + colors[i] + '; border-radius: 50%; display: inline-block; width: 20px; height: 20px;"></a>';
-    }
-  });
-});
