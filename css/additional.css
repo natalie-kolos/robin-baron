@@ -352,13 +352,14 @@
 }
 .portfolio__product .portfolio__product__block figure {
   overflow: hidden;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.32) 100%), url(https://placehold.co/600x400);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.32) 100%), url(../img/img-prdes-01.jpg);
   background-position: center;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .portfolio__product .portfolio__product__block figure {
