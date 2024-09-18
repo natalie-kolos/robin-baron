@@ -312,7 +312,7 @@
   position: absolute;
   bottom: -4px;
   left: 0;
-  right: 0;
+  right: auto;
   margin: 0 auto;
   width: 403px;
   height: 38px;
@@ -329,6 +329,9 @@
     width: 250px;
     height: 30px;
   }
+}
+.title__brush.text-center::after {
+  right: 0;
 }
 .btn-custom__outline__dark {
   border: 1px solid #889466;
@@ -432,6 +435,9 @@
 }
 .accordion-section.bg-primary .accordion-body {
   color: white;
+}
+.accordion-section.bg-neutral .accordion-item {
+  border-bottom: 1px solid #94a071;
 }
 .pressmedia-section {
   padding: 40px 0;
