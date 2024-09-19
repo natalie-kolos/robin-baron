@@ -556,6 +556,7 @@ body:after {
 }
 .bg-neutral {
   background-color: #f7f5f3;
+  z-index: 1;
 }
 .licenses-wrap .licenses-block {
   display: flex;
@@ -603,4 +604,113 @@ body:after {
   margin-top: 24px;
   width: 10%;
   opacity: 1;
+}
+#carouselCustomBtn .carousel-indicators {
+  position: relative;
+  justify-content: flex-start;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 40px;
+  padding: 0 5%;
+}
+#carouselCustomBtn .carousel-indicators [data-bs-target] {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  text-indent: 0;
+  color: #889466;
+  border: 1px solid #889466;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+#carouselCustomBtn .carousel-indicators [data-bs-target].active {
+  background-color: #889466;
+  color: white;
+}
+#carouselCustomBtn .carousel-item-next,
+#carouselCustomBtn .carousel-item-prev {
+  display: flex !important;
+  gap: 40px;
+  align-items: center;
+}
+#carouselCustomBtn .carousel-item.active {
+  display: flex !important;
+  gap: 40px;
+  align-items: flex-start;
+}
+@media (max-width: 991px) {
+  #carouselCustomBtn .carousel-item.active {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+#carouselCustomBtn .carousel-item .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 1.25rem;
+  left: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #000000;
+  text-align: left;
+  padding-left: 5%;
+}
+#carouselCustomBtn .carousel-item .carousel-caption h3 {
+  color: #889466;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+}
+#carouselCustomBtn .carousel-item .carousel-caption hr {
+  border-color: #889466;
+  border-width: 1px;
+  width: 20%;
+}
+#carouselCustomBtn .carousel-item .carousel-caption p {
+  font-weight: 300;
+}
+#carouselCustomBtn .carousel-item .carousel-image {
+  width: 60%;
+}
+@media (max-width: 991px) {
+  #carouselCustomBtn .carousel-item .carousel-image {
+    width: 100%;
+  }
+}
+.carousel-custom-btn {
+  position: relative;
+}
+.carousel-custom-btn .carousel-control-next,
+.carousel-custom-btn .carousel-control-prev {
+  width: 5%;
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  .carousel-custom-btn .carousel-control-next,
+  .carousel-custom-btn .carousel-control-prev {
+    bottom: auto;
+  }
+}
+.carousel-custom-btn .carousel-control-next-icon,
+.carousel-custom-btn .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-position-y: 40%;
+  background-size: 80% 80%;
+  background-color: black;
+  border-radius: 50%;
+  /* padding: 10px; */
 }
